@@ -1,0 +1,95 @@
+.posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post {
+    padding: 10px;
+    width: calc(100% - 10px * 2);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black-accent);
+    border-radius: 10px;
+}
+
+.post-header {
+    padding: 10px;
+    width: calc(100% - 10px * 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-header>a:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-header>a:nth-child(1)>img {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    outline: 1px solid var(--color-accent);
+}
+
+.post-wrapper {
+    text-align: center;
+}
+
+.post-wrapper>img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.post-wrapper>pre {
+    margin: 10px;
+    width: calc(100% - 10px * 2);
+    text-align: center;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+.post-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post-footer>a {
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.post-footer>a:hover,
+.post-footer>a:focus {
+    outline: 1px solid var(--color-accent);
+    cursor: pointer;
+}
+
+.post-footer>a>img {
+    height: 75%;
+}
+
+.like-confirmed {
+    background-color: var(--color-accent);
+}
+
+.like-confirmed:focus,
+.like-confirmed:hover {
+    background-color: var(--color-accent-hover) !important;
+}
